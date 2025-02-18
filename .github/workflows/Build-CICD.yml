@@ -1,0 +1,9 @@
+stages:
+  - build
+  - deploy
+  - checking
+build:
+  stage:
+    - whoami
+    - pwd
+    - ls
