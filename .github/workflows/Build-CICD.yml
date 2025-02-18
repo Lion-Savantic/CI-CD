@@ -1,9 +1,14 @@
+
+
 stages:
   - build
   - deploy
-  - checking
+  - checklog
 build:
-  stage:
+  stage: build
+  script:
     - whoami
     - pwd
     - ls
+  tags:
+    - lab-server
